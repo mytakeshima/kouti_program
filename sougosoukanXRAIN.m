@@ -34,8 +34,8 @@ time_axis = time_start + (0:num_time_steps-1) * time_step;
 
 lat_target = 37.2; % 中心緯度
 lon_target = 136.9; % 中心経度
-lat_range = [32.5, 34];
-lon_range = [132.5, 134.5];
+lat_range = [31, 34];
+lon_range = [131, 135];
 
 % 比湿範囲インデックス
 lat_idx_q = find(lat_q >= lat_range(1) & lat_q <= lat_range(2));
@@ -316,4 +316,4 @@ grid on;
 
 
 % プロットの保存
-saveas(gcf, fullfile('C:\Users\murqk\Desktop\卒論結果まとめ\高知\XRAIN(累積降水量使用)', '相互相関プロット(範囲高知).png'));
+saveas(gcf, fullfile('C:\Users\murqk\Desktop\卒論結果まとめ\高知\XRAIN(累積降水量使用)', '相互相関プロット雷変更時間フィルタなし(範囲四国).png'));
